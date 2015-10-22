@@ -1,0 +1,13 @@
+version: 0.0.{build}
+
+platform: Any CPU
+configuration: Release
+
+build_script:
+  - ps: echo 'Starting'
+  - ps: dir 'C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile'
+  - ps: echo 'Finished'
+
+#artifacts:
+#  - path: YamlDotNet\bin\Release-Unsigned
+#    name: Release-Unsigned
