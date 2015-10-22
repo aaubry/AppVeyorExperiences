@@ -5,8 +5,7 @@ configuration: Release
 
 build_script:
   - ps: echo 'Starting'
-  - cmd: 7z a Profile259.zip "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.5\Profile\Profile259"
+  - cmd: dir "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v3.5\Profile"
+  - cmd: dir "C:\Program Files (x86)\MSBuild\SyntaxTree"
   - ps: echo 'Finished'
 
-artifacts:
-  - path: Profile259.zip
